@@ -7,7 +7,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.preprocessing import StandardScaler
 from sklearn.utils import shuffle
 
-df_timeseries = pd.read_excel('/Users/johnmakris/Downloads/data_akbilgic.xlsx', header=1)
+df_timeseries = pd.read_excel('/Users/john/Downloads/data_akbilgic.xlsx', header=1)
 df_timeseries = df_timeseries.iloc[0:529, :]
 df_timeseries.drop(['date', 'ISE'], axis=1, inplace=True)
 scaler = StandardScaler()
