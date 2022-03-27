@@ -13,7 +13,7 @@ from sklearn.utils import shuffle
 from mpl_toolkits.mplot3d import Axes3D
 
 
-df = pd.read_excel('/Users/johnmakris/Downloads/CTG.xls', sheet_name='Data', header=1)
+df = pd.read_excel('/Users/john/Downloads/CTG.xls', sheet_name='Data', header=1)
 df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
 print(df.shape)
 df = df[['LB', 'AC', 'FM', 'UC', 'DL', 'DS', 'DP', 'ASTV', 'MSTV', 'ALTV', 'MLTV', 'Width', 'Min', 'Max',
